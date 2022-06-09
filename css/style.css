@@ -54,9 +54,9 @@ body{
 #nav-list1{
     transform: translateX(290px);
     animation-name: list1;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
 }
 @keyframes list1 {
     to{
