@@ -64,6 +64,7 @@ body{
 }
 
 #nav-list2{
+    display: none;
     transform: translateX(200px);
     animation-name: list2;
     animation-duration: 2.5s;
@@ -72,6 +73,7 @@ body{
 }
 @keyframes list2 {
     to{
+        display: list-item;
         transform: translateX(0);
     }
 }
@@ -87,6 +89,7 @@ body{
         transform: translateX(0);
     }
 }
+
 /* iletişim */
 
 
