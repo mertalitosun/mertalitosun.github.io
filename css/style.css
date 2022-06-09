@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* main-header */
+
+
+.main-header{
+    background-image: url(../img/main-img.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+
+}
+/* brand animasyon */
+#header-brand-mert{
+    transform: translateX(-500px);
+    animation-name: brand;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes brand {
+    to{
+        transform: translateX(0);
+    }
+    
+}
+
+/* listeler animasyon */
+#nav-list1{
+    transform: translateX(5000px);
+    animation-name: list1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes list1 {
+    to{
+        transform: translateX(0);
+    }
+}
+
+#nav-list2{
+    transform: translateX(5000px);
+    animation-name: list2;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes list2 {
+    to{
+        transform: translateX(0);
+    }
+}
+
+#nav-list3{
+    transform: translateX(5000px);
+    animation-name: list3;
+    animation-duration: 2.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes list3 {
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* iletişim */
+
+
+footer{
+    background-image: url(../img/footer.webp);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+}
+
+footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+footer * {
+    z-index: 5;
+}
+#mail:hover{
+    color: #1363DF !important;
+}
+
+#linkedin:hover{
+    color: #1363DF !important;
+}
+
+#github:hover{
+    color: #e2725b !important;
+}
