@@ -37,7 +37,7 @@ body{
 }
 /* brand animasyon */
 #header-brand-mert{
-    transform: translateX(-500px);
+    transform: translateX(-205px);
     animation-name: brand;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -52,9 +52,9 @@ body{
 
 /* listeler animasyon */
 #nav-list1{
-    transform: translateX(5000px);
+    transform: translateX(290px);
     animation-name: list1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 @keyframes list1 {
@@ -64,10 +64,11 @@ body{
 }
 
 #nav-list2{
-    transform: translateX(5000px);
+    transform: translateX(200px);
     animation-name: list2;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    animation-delay: 0.2s;
 }
 @keyframes list2 {
     to{
@@ -76,9 +77,9 @@ body{
 }
 
 #nav-list3{
-    transform: translateX(5000px);
+    transform: translateX(100px);
     animation-name: list3;
-    animation-duration: 2.8s;
+    animation-duration: 2.9s;
     animation-fill-mode: forwards;
 }
 @keyframes list3 {
@@ -86,7 +87,6 @@ body{
         transform: translateX(0);
     }
 }
-
 /* iletişim */
 
 
