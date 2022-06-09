@@ -54,7 +54,7 @@ body{
 #nav-list1{
     transform: translateX(290px);
     animation-name: list1;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 @keyframes list1 {
@@ -68,6 +68,7 @@ body{
     animation-name: list2;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
+    animation-delay: 0.2s;
 }
 @keyframes list2 {
     to{
@@ -78,7 +79,7 @@ body{
 #nav-list3{
     transform: translateX(100px);
     animation-name: list3;
-    animation-duration: 2.8s;
+    animation-duration: 2.9s;
     animation-fill-mode: forwards;
 }
 @keyframes list3 {
