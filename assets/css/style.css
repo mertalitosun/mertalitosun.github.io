@@ -33,8 +33,8 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6)
-
 }
+
 /* brand animasyon */
 #header-brand-mert{
     transform: translateX(-205px);
@@ -56,7 +56,7 @@ body{
     animation-name: list1;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 @keyframes list1 {
     to{
@@ -92,38 +92,58 @@ body{
     }
 }
 
-/* iletişim */
 
 
-footer{
-    background-image: url(../img/footer.webp);
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-size: cover;
-    position: relative;
+
+.about-me .hakkimda {
+    letter-spacing: 5px;
 }
 
-footer::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    
-}
-footer * {
-    z-index: 5;
-}
-#mail:hover{
-    color: #1363DF !important;
+.about-me p{
+    text-indent: 12px;
 }
 
-#linkedin:hover{
-    color: #1363DF !important;
+.about-me a {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: gray;
 }
 
-#github:hover{
-    color: #e2725b !important;
+
+
+/* about-me/link-icon process */
+
+.fa-envelope:hover,
+.fa-envelope:active{
+    color: #00B2FF;
+}
+
+.fa-instagram:hover,
+.fa-instagram:active{
+    color: #E1306C;
+}
+
+.fa-github:hover,
+.fa-github:active{
+    color: #833AB4;
+}
+
+.fa-linkedin:hover,
+.fa-linkedin:active{
+    color: #0e668c;
+}
+
+.fa-spotify:hover,
+.fa-spotify:active{
+    color: #1DB954;
+}
+
+.siparis .btn:hover{
+
+    background-color: rgb(64, 60, 60);
+    color: #ffc107;
 }
