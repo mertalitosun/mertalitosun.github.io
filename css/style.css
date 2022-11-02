@@ -92,6 +92,19 @@ body{
     }
 }
 
+#nav-list4{
+    transform: translateX(50px);
+    animation-name: list4;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes list4 {
+    to{
+        transform: translateX(0);
+    }
+}
+
 
 
 
