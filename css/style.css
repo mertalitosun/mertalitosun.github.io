@@ -160,5 +160,10 @@ body{
     background-color: rgb(64, 60, 60);
     color: #ffc107;
 }
+.projects .btn:hover{
+
+    background-color: rgb(64, 60, 60);
+    color: #ffc107;
+}
 
 
