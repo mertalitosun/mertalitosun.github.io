@@ -20,10 +20,10 @@
 <body>
     <!-- HEADER -->
     <header class="main-header navbar-expand-lg mb-5">
-        <nav class="navbar bg-light navbar-light navbar-expand-sm">
+        <!-- <nav class="navbar bg-light navbar-light">
             <div class="container">
                 <a href="#" class="navbar-brand fs-4" id="header-brand-mert">Mertali Tosun</a>
-                <ul class="navbar-nav" >
+                <ul class="navbar-nav">
                     <li class="nav-item" id="nav-list1">
                         <a href="#" class="nav-link active">Anasayfa</a>
                     </li>
@@ -33,9 +33,49 @@
                     <li class="nav-item" id="nav-list3">
                         <a href="#iletisim" class="nav-link">İletişim</a>
                     </li>
+                    <li class="nav-item" id="nav-list3">
+                        <a href="#projects" class="nav-link">Projeler</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
+
+        <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MERTALİ TOSUN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">ANASAYFA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#hakkimda">HAKKIMDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">İLETİŞİM</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PROJELER
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dda" href="#calculator">Hesap Makinesi</a></li>
+                        <li><a class="dropdown-item" href="#timer">Kronometre</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
         <div class="container">
@@ -67,9 +107,7 @@
             </div>
         
     
-        
-    
-    
+    <!-- hakkımda & eğitim -->
             <section class="container bg-light mt-5 mb-5 pt-2" id="hakkımda">
                     <div class="row">
                         <!-- BECERİLER -->
@@ -138,11 +176,11 @@
 
 
         <!-- projeler -->
-        <div class="container mb-5 ">
+        <div class="container mb-5" id="projects">
             <div class="row projects">
                 <h3 class="text-center">PROJELER</h3>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <div class="card" style="width: 24rem;">
+                    <div class="card" style="width: 24rem;" id="calculator">
                         <img src="./Hesap Makinesi/img/calculator.png" class="card-img-top img-fluit" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">HESAP MAKİNESİ</h5>
@@ -153,7 +191,7 @@
                       </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <div class="card " style="width: 24rem;">
+                    <div class="card " style="width: 24rem;" id="timer">
                         <img src="./timer_/img/timer.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title text-center">KRONOMETRE</h5>

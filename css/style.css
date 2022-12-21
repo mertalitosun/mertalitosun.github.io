@@ -34,9 +34,12 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6)
 }
-
+.dda:active{
+    background-color: rgb(64, 60, 60) !important; 
+    color: #ffc107 !important;
+}
 /* brand animasyon */
-#header-brand-mert{
+/* #header-brand-mert{
     transform: translateX(-205px);
     animation-name: brand;
     animation-duration: 2s;
@@ -48,10 +51,10 @@ body{
         transform: translateX(0);
     }
     
-}
+} */
 
 /* listeler animasyon */
-#nav-list1{
+/* #nav-list1{
     transform: translateX(290px);
     animation-name: list1;
     animation-duration: 3s;
@@ -62,9 +65,9 @@ body{
     to{
         transform: translateX(0);
     }
-}
+} */
 
-#nav-list2{
+/* #nav-list2{
    
     transform: translateX(200px);
     animation-name: list2;
@@ -77,9 +80,9 @@ body{
         
         transform: translateX(0);
     }
-}
+} */
 
-#nav-list3{
+/* #nav-list3{
     transform: translateX(100px);
     animation-name: list3;
     animation-duration: 2.5s;
@@ -103,7 +106,7 @@ body{
     to{
         transform: translateX(0);
     }
-}
+} */
 
 
 
