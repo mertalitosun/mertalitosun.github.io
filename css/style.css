@@ -24,14 +24,29 @@ body{
     background-attachment: fixed;
     position: relative;
 }
-.moon{
+.switch-button{
     position: absolute;
-    left: 50%;
+    left: 45%;
+    width: 60px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.switch-button-dark{
+    border-color: #fff !important;
+}
+.moon{
+    /* position: absolute;
+    left: 50%; */
+    position: absolute;
+    left: 10%;
+    bottom: 4%;
 }
 .sun{
+    position: absolute;
     display: none;
     position: absolute;
-    left: 50%;
+    left: 60%;
 }
 .body-mod{
     background-color: #000 !important;

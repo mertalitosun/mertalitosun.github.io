@@ -7,10 +7,15 @@ const hakkimda = document.getElementById("beceri");
 const calculator = document.getElementById("calculator");
 const timer = document.getElementById("timer");
 const offcanvas = document.querySelector(".offcanvas");
+const button = document.querySelector(".switch-button");
+const buttonclose = document.querySelector(".btn-close");
+
 
 moon.addEventListener("click",()=>{
     sun.style.display="block";
     moon.style.display="none";
+    button.classList.add("switch-button-dark");
+    buttonclose.classList.add("btn-close-white");
     body.classList.add("body-mod");
     header.classList.remove("bg-light");
     header.classList.add("body-mod", "navbar-dark");
@@ -29,6 +34,8 @@ moon.addEventListener("click",()=>{
 sun.addEventListener("click",()=>{
     sun.style.display="none";
     moon.style.display="block";
+    button.classList.remove("switch-button-dark");
+    buttonclose.classList.remove("btn-close-white");
     body.classList.remove("body-mod");
     header.classList.remove("body-mod", "navbar-dark");
     header.classList.add("bg-light");
