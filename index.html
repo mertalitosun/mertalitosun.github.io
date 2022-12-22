@@ -17,7 +17,7 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="body">
     <!-- HEADER -->
     <header class="main-header navbar-expand-lg mb-5">
         <!-- <nav class="navbar bg-light navbar-light">
@@ -39,10 +39,12 @@
                 </ul>
             </div>
         </nav> -->
-
+        
         <nav class="navbar bg-light fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">MERTALİ TOSUN</a>
+                <div class="moon"><i class="fa-solid fa-moon"></i></div>
+                <div class="sun"><i class="fa-solid fa-sun"></i></div>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -75,9 +77,8 @@
                 </div>
               </div>
             </div>
-          </nav>
+        </nav>
     </header>
-
         <div class="container">
             <!-- ABOUT-ME -->
             <div class="about-me bg-light py-5 my-5" id="hakkimda">
@@ -88,8 +89,8 @@
                     </div>
                     <div class="col-md-7 col-lg-7">
                         <h2 class="mt-5 pt-5">Mertali Tosun</h2>
-                        <p class="text-muted mt-3 d-flex text-center">
-                            Merhabalar, ben Mertali. 2001 yılında İzmir’da doğdum. 
+                        <p class=" mt-3 d-flex text-center">
+                            Merhabalar, ben Mertali. 2001 yılında İzmir’de doğdum. 
                             Yazılımla tanışmam lise son sınıftayken oldu liseyi Eskişehir Toki Şehit İsmail Tetik Anadolu Lisesinde tamamladım
                             Şu anda akademik hayatıma Denizli Pamukkale Üniversitesi Yönetim Bilişim Sistemleri lisans programında devam ediyorum. Akademik hayatımın yanında freelancer olarak web sitesi programcılığı yapıyorum. </p>
     
@@ -107,8 +108,8 @@
             </div>
         
     
-    <!-- hakkımda & eğitim -->
-            <section class="container bg-light mt-5 mb-5 pt-2" id="hakkımda">
+    <!-- beceriler & eğitim -->
+            <section class="container bg-light mt-5 mb-5 pt-2" id="beceri">
                     <div class="row">
                         <!-- BECERİLER -->
                         <section class="col-lg-6 col-sm-12">
@@ -118,31 +119,40 @@
                                         <hr>
                                             <div class="row">
                                                 <div class="col-lg-12 col-sm-12">
-                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-html5 fa-2x" style="color:#ec6231;"></i></span>
+                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-html5 fa-2x" style="color:#ec6231;"></i></span> <br>
         
                                                     <!-- ilerleme bar -->
         
-                                                    <div class="progress mb-5" style="height:4px;">
+                                                    <div class="progress mb-5" style="height:6px;">
                                                         <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="col-lg-12 col-sm-12">
-                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-css3 fa-2x text-primary"></i></span>
+                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-css3 fa-2x text-primary"></i></span> <br>
         
                                                     <!-- ilerleme bar -->
-                                                    <div class="progress mb-5" style="height: 4px;">
+                                                    <div class="progress mb-5" style="height: 6px;">
                                                         <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
         
                                                 <div class="col-lg-12 col-sm-12">
-                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-bootstrap fa-2x" style="color:#a444f4;"></i></span>
+                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-bootstrap fa-2x" style="color:#a444f4;"></i></span> <br>
         
                                                     <!-- ilerleme bar -->
-                                                    <div class="progress  mb-5" style="height: 4px;">
+                                                    <div class="progress  mb-5" style="height: 6px;">
                                                         <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12 col-sm-12">
+                                                    <span class="d-flex justify-content-center"><i class="fa-brands fa-js fa-2x" style="color:#FED049;"></i></span> <br>
+        
+                                                    <!-- ilerleme bar -->
+                                                    <div class="progress  mb-5" style="height: 6px;">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -158,11 +168,11 @@
                                     <hr>
         
                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-12 mb-5">
+                                        <div class="col-lg-12 col-sm-12 my-5">
                                             <h4 class="text-center">Pamukkale Üniversitesi</h4>
                                             <p class="text-secondary text-center">Lisans Derecesi - Yönetim Bilişim Sistemleri</p>
                                         </div>
-                                        <div class="col-lg-12 col-sm-12">
+                                        <div class="col-lg-12 col-sm-12 mt-5 pt-5">
                                             <h4 class="text-center">Toki Şehit İsmail Tetik Anadolu Lisesi</h4>
                                             <p class="text-center text-secondary">Eşit Ağırlık</p>
                                         </div>
@@ -180,10 +190,10 @@
             <div class="row projects">
                 <h3 class="text-center">PROJELER</h3>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <div class="card" style="width: 24rem;" id="calculator">
+                    <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 24rem;" id="calculator">
                         <img src="./Hesap Makinesi/img/calculator.png" class="card-img-top img-fluit" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">HESAP MAKİNESİ</h5>
+                          <h5 class="card-title text-center">HESAP MAKİNESİ</h5>
                           <p class="card-text">Html  CSS Javascript</p>
                           <p class="card-text">Javascript öğrenme sürecinde yaptığım proje</p>
                           <a href="Hesap Makinesi/calculator.html" class="btn btn-warning d-flex justify-content-center" target="_blank">GÖRÜNTÜLE</a>
@@ -191,11 +201,11 @@
                       </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <div class="card " style="width: 24rem;" id="timer">
+                    <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="width: 24rem;" id="timer">
                         <img src="./timer_/img/timer.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title text-center">KRONOMETRE</h5>
-                          <p class="card-text text-muted m-2">Html CSS Javascript</p>
+                          <p class="card-text m-2">Html CSS Javascript</p>
                           <p class="card-text">Javascript öğrenme sürecinde yaptığım proje</p>
                           <a href="./timer_/index.html" class="btn btn-warning d-flex justify-content-center" target="_blank">GÖRÜNTÜLE</a>
                         </div>
@@ -213,7 +223,7 @@
     </footer>
      
 
-    <script src="js/script.js"></script>
+    <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
