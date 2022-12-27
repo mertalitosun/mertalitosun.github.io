@@ -6,6 +6,7 @@ const about = document.querySelector(".about-me");
 const hakkimda = document.getElementById("beceri");
 const calculator = document.getElementById("calculator");
 const timer = document.getElementById("timer");
+const todo = document.getElementById("todo");
 const offcanvas = document.querySelector(".offcanvas");
 const button = document.querySelector(".switch-button");
 const buttonclose = document.querySelector(".btn-close");
@@ -28,6 +29,8 @@ moon.addEventListener("click",()=>{
     calculator.classList.add("about-me-mod");
     timer.classList.remove("bg-body");
     timer.classList.add("about-me-mod");
+    todo.classList.remove("bg-body");
+    todo.classList.add("about-me-mod");
     offcanvas.classList.add("body-mod");
 })
 
@@ -48,6 +51,8 @@ sun.addEventListener("click",()=>{
     calculator.classList.add("bg-body");
     timer.classList.remove("about-me-mod");
     timer.classList.add("bg-body");
+    todo.classList.remove("about-me-mod");
+    todo.classList.add("bg-body");
     offcanvas.classList.remove("body-mod");
 })
 
