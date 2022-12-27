@@ -11,49 +11,42 @@ const offcanvas = document.querySelector(".offcanvas");
 const button = document.querySelector(".switch-button");
 const buttonclose = document.querySelector(".btn-close");
 
+const mod = () =>{
+    button.classList.toggle("switch-button-dark");
+    body.classList.toggle("body-mod");
+    header.classList.toggle("body-mod");
+    header.classList.toggle("navbar-dark");
+    header.classList.toggle("bg-light");
 
+    about.classList.toggle("bg-light");
+    about.classList.toggle("about-me-mod");
+
+    hakkimda.classList.toggle("about-me-mod");
+    hakkimda.classList.toggle("bg-light");
+
+    calculator.classList.toggle("bg-body");
+    calculator.classList.toggle("about-me-mod");
+
+    timer.classList.toggle("bg-body");
+    timer.classList.toggle("about-me-mod");
+    
+    todo.classList.toggle("bg-body");
+    todo.classList.toggle("about-me-mod");
+}
 moon.addEventListener("click",()=>{
     sun.style.display="block";
     moon.style.display="none";
-    button.classList.add("switch-button-dark");
     buttonclose.classList.add("btn-close-white");
-    body.classList.add("body-mod");
-    header.classList.remove("bg-light");
-    header.classList.add("body-mod", "navbar-dark");
-    about.classList.remove("bg-light");
-    about.classList.add("about-me-mod");
-    hakkimda.classList.remove("bg-light");
-    hakkimda.classList.add("about-me-mod");
-
-    calculator.classList.remove("bg-body");
-    calculator.classList.add("about-me-mod");
-    timer.classList.remove("bg-body");
-    timer.classList.add("about-me-mod");
-    todo.classList.remove("bg-body");
-    todo.classList.add("about-me-mod");
     offcanvas.classList.add("body-mod");
+    mod();
 })
 
 sun.addEventListener("click",()=>{
     sun.style.display="none";
     moon.style.display="block";
-    button.classList.remove("switch-button-dark");
     buttonclose.classList.remove("btn-close-white");
-    body.classList.remove("body-mod");
-    header.classList.remove("body-mod", "navbar-dark");
-    header.classList.add("bg-light");
-    about.classList.remove("about-me-mod");
-    about.classList.add("bg-light");
-    hakkimda.classList.remove("about-me-mod");
-    hakkimda.classList.add("bg-light");
-    
-    calculator.classList.remove("about-me-mod");
-    calculator.classList.add("bg-body");
-    timer.classList.remove("about-me-mod");
-    timer.classList.add("bg-body");
-    todo.classList.remove("about-me-mod");
-    todo.classList.add("bg-body");
     offcanvas.classList.remove("body-mod");
+    mod();
 })
 
 
