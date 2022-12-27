@@ -10,6 +10,7 @@ const todo = document.getElementById("todo");
 const offcanvas = document.querySelector(".offcanvas");
 const button = document.querySelector(".switch-button");
 const buttonclose = document.querySelector(".btn-close");
+const card = document.querySelectorAll(".card");
 
 const mod = () =>{
     button.classList.toggle("switch-button-dark");
@@ -24,14 +25,20 @@ const mod = () =>{
     hakkimda.classList.toggle("about-me-mod");
     hakkimda.classList.toggle("bg-light");
 
-    calculator.classList.toggle("bg-body");
-    calculator.classList.toggle("about-me-mod");
+    // calculator.classList.toggle("bg-body");
+    // calculator.classList.toggle("about-me-mod");
 
-    timer.classList.toggle("bg-body");
-    timer.classList.toggle("about-me-mod");
+    // timer.classList.toggle("bg-body");
+    // timer.classList.toggle("about-me-mod");
     
-    todo.classList.toggle("bg-body");
-    todo.classList.toggle("about-me-mod");
+    // todo.classList.toggle("bg-body");
+    // todo.classList.toggle("about-me-mod");
+
+    for(var i = 0; i < card.length; i++){
+        card[i].classList.toggle("bg-body");
+        card[i].classList.toggle("about-me-mod");
+    }
+
 }
 moon.addEventListener("click",()=>{
     sun.style.display="block";
