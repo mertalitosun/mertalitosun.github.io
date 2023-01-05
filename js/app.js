@@ -6,6 +6,7 @@ const about = document.querySelector(".about-me");
 const hakkimda = document.getElementById("beceri");
 const calculator = document.getElementById("calculator");
 const timer = document.getElementById("timer");
+const not = document.getElementById("not");
 const todo = document.getElementById("todo");
 const offcanvas = document.querySelector(".offcanvas");
 const button = document.querySelector(".switch-button");
