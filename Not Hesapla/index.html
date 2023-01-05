@@ -23,27 +23,46 @@
         </div>
 
         <div class="final">
-            <!-- final not -->
-          <label for="">FİNAL:</label>
+            <!-- min ort label -->
+          <label for="" id="moL" style="display: none;">Gereken <br> Min <br> Ort:</label>
+
+          <label for="" id="fL">FİNAL:</label>
+
+          <!-- final not -->
           <input type="number" min="0" max="100" placeholder="Final Notunuzu Giriniz." id="final">
+
+          <!-- dersi geçmek için gereken min ortalama -->
+          <input type="number" min="0" max="100" placeholder="Dersi Geçmek İçin Min. Ortalama." id="mo" style="display: none;">
+
             <!-- final yüzde -->
           <label for="">YÜZDE:</label>
           <input type="number" min="0" max="100" value="60" id="fyuzde">
+
             <!-- final katkı -->
           <label for="">KATKI:</label>
           <label for="" id="fkatki"></label>
         </div>
+
         <!-- hesapla buton -->
         <button id="hesapla">hesapla</button>
+        <button id="fnBulHesapla" style="display: none;">hesapla</button>
 
         <div class="sonuc">
+
             <!-- sonuc goster -->
             <span id="sonuc"></span>
+
             <!-- nihai sonuc goster -->
             <span id="nsonuc"></span>
 
         </div>
+        <!-- refresh buton -->
         <div class="refresh"><i class="fa-solid fa-arrows-rotate"></i></div>
+
+        <!-- gereken final notu bulma ekranı buton -->
+        <div class="fnBul">
+          <label id="finalNot">Dersi Geçmek İçin Final Sınavından En Az Kaç Almam Gerekir?</label>
+        </div>
     </div>
 
 
