@@ -43,7 +43,7 @@ const minOrt = document.getElementById("mo");
 // min ortalama label
 const minOrtL = document.getElementById("moL");
 
-
+// vize ve final ortalama hesapla
 hesapla.addEventListener("click" ,()=>{
     // vize not değer
     const vn=vize.value;
