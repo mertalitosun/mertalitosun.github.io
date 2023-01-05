@@ -137,9 +137,12 @@ body{
 
 
 
-
+#hakkimda{
+    transition:.5s;
+}
 .about-me .hakkimda {
     letter-spacing: 5px;
+    
 }
 
 .about-me p{
@@ -161,7 +164,9 @@ body{
     color: #fff !important;
 }
 
-
+#beceri{
+    transition:.5s;
+}
 /* about-me/link-icon process */
 
 .fa-envelope:hover,
