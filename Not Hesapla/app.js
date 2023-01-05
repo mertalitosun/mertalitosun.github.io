@@ -63,11 +63,13 @@ hesapla.addEventListener("click" ,()=>{
     // ortalama not
     const ns=vks+fks;
 
-    if(vn==0 || fn==0){
+    // vize ve final notu sıfırdan boş geçilemez 
+    if(vn=="" || fn==""){
         alert("Vize Ve Final Notu Boş Geçilemez!");
     }
-    else{
-           // vize katkı yazdır
+    else if(vn>=0 && vn<=100 && fn>=0 && fn<=100){      //vize ve final notu aralıkları
+        if(vy>=1 && vy<=100 && fy>=0 && fy<=100){       // vize ve final yüzdelik aralıkları
+            // vize katkı yazdır
             vkatki.innerHTML=vks;
             // final katkı yazdır
             fkatki.innerHTML=fks;
@@ -75,6 +77,13 @@ hesapla.addEventListener("click" ,()=>{
             // sonucu ve nihai sonucu yazdır
             sonuc.innerHTML = "Sonuc: " + ns;
             nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(ns);
+        }
+        else{
+            alert("Vize Ve Final Notu Yüzdeleri 1 ile 100 Arasında olmalıdır!");
+        }
+    }
+    else{
+           alert("Vize Ve Final Notu 0 ile 100 Arasında olmalıdır!");
     }
  
 })
@@ -125,23 +134,33 @@ fnBulHesapla.addEventListener("click", ()=>{
     // finalden alman gereken not
     const fgy = (fg*100)/fy;
 
-    // vize katkı yazdır
-    vkatki.innerHTML=vks;
-
-    if(vn==0){
+    
+    // vize notu boş geçilemez
+    if(vn==""){
         alert("Vize Notu Boş Geçilemez!")
     }
+    else if(mo>=1 && mo<=100 && vn>=0 && vn<=100){                //min ort ile vize notu değerleri
+        if(vy>=1 && vy<=100 && fy>=0 && fy<=100){                 // vize ve final yüzdelikleri
+            // vize katkı yazdır
+            vkatki.innerHTML=vks;
+
+            // final katkı sonuc
+            const fks = (fgy*fy/100);
+
+            // final katkı yazdır
+            fkatki.innerHTML=fks;
+
+
+            // sonucu ve nihai sonucu yazdir
+            sonuc.innerHTML = "Sonuc: " + fgy;
+            nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(fgy);
+        }
+        else{
+            alert("Vize Ve Final Notu Yüzdeleri 1 ile 100 Arasında olmalıdır!");
+        }
+    }
     else{
-        // final katkı sonuc
-        const fks = (fgy*fy/100);
-
-        // final katkı yazdır
-        fkatki.innerHTML=fks;
-
-
-        // sonucu ve nihai sonucu yazdir
-        sonuc.innerHTML = "Sonuc: " + fgy;
-        nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(fgy);
+        alert("Gereken Min Ortalama Değeri 1 ile 100 Vize Notu 0 ile 100 Arasında olmalıdır!");
     }
     
 })
