@@ -68,7 +68,7 @@ hesapla.addEventListener("click" ,()=>{
         alert("Vize Ve Final Notu Boş Geçilemez!");
     }
     else if(vn>=0 && vn<=100 && fn>=0 && fn<=100){      //vize ve final notu aralıkları
-        if(vy>=1 && vy<=100 && fy>=0 && fy<=100){       // vize ve final yüzdelik aralıkları
+        if(vy>=1 && vy<=100 && fy>=1 && fy<=100){       // vize ve final yüzdelik aralıkları
             // vize katkı yazdır
             vkatki.innerHTML=vks;
             // final katkı yazdır
@@ -140,7 +140,7 @@ fnBulHesapla.addEventListener("click", ()=>{
         alert("Vize Notu Boş Geçilemez!")
     }
     else if(mo>=1 && mo<=100 && vn>=0 && vn<=100){                //min ort ile vize notu değerleri
-        if(vy>=1 && vy<=100 && fy>=0 && fy<=100){                 // vize ve final yüzdelikleri
+        if(vy>=1 && vy<=100 && fy>=1 && fy<=100){                 // vize ve final yüzdelikleri
             // vize katkı yazdır
             vkatki.innerHTML=vks;
 
