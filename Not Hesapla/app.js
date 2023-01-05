@@ -63,16 +63,21 @@ hesapla.addEventListener("click" ,()=>{
     // ortalama not
     const ns=vks+fks;
 
-    // vize katkı yazdır
-    vkatki.innerHTML=vks;
-    // final katkı yazdır
-    fkatki.innerHTML=fks;
+    if(vn==0 || fn==0){
+        alert("Vize Ve Final Notu Boş Geçilemez!");
+    }
+    else{
+           // vize katkı yazdır
+            vkatki.innerHTML=vks;
+            // final katkı yazdır
+            fkatki.innerHTML=fks;
 
-    // sonucu ve nihai sonucu yazdır
-    sonuc.innerHTML = "Sonuc: " + ns;
-    nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(ns);
+            // sonucu ve nihai sonucu yazdır
+            sonuc.innerHTML = "Sonuc: " + ns;
+            nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(ns);
+    }
+ 
 })
-
 // sayfayı yenile
 refresh.addEventListener("click", ()=>{
     window.location.reload(false);
@@ -123,15 +128,21 @@ fnBulHesapla.addEventListener("click", ()=>{
     // vize katkı yazdır
     vkatki.innerHTML=vks;
 
-    // final katkı sonuc
-    const fks = (fgy*fy/100);
+    if(vn==0){
+        alert("Vize Notu Boş Geçilemez!")
+    }
+    else{
+        // final katkı sonuc
+        const fks = (fgy*fy/100);
 
-    // final katkı yazdır
-    fkatki.innerHTML=fks;
+        // final katkı yazdır
+        fkatki.innerHTML=fks;
 
 
-    // sonucu ve nihai sonucu yazdir
-    sonuc.innerHTML = "Sonuc: " + fgy;
-    nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(fgy);
+        // sonucu ve nihai sonucu yazdir
+        sonuc.innerHTML = "Sonuc: " + fgy;
+        nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(fgy);
+    }
+    
 })
  
