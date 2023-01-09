@@ -49,7 +49,7 @@ hesapla.addEventListener("click" ,()=>{
     const vn=vize.value;
     // vize yüzde değer
     const vy=vyuzde.value;
-
+    
     // final not değer
     const fn=final.value;
     // final yüzde değer
