@@ -14,6 +14,9 @@ body{
     position: relative;
     box-shadow: 20px 20px 200px 15px grey;
   }
+.tablo{
+  width: 100%;
+}
   .vize{
     display: flex;
     justify-content: space-around;
@@ -26,16 +29,32 @@ body{
     justify-content:space-around;
     align-items: center;
   }
-  
+
+  /* yeni yöntem ekleme butonu */
+  .yontemEkle{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
   /* vize input */
   #vize{
     margin-left: 3px;
     width: 200px;
   }
+
   /* final input */
   #final{
+    margin-left: 3px;
     width: 200px;
   }
+
+  .yontemInput{
+    margin-left: 3px;
+    width: 200px;
+  }
+
   /* min ortalama input */
   #mo{
     width: 200px;
@@ -53,6 +72,7 @@ body{
     position: relative;
     left: 45%;
   }
+
   button:hover{
     background-color: #379237;
   }
@@ -75,6 +95,7 @@ body{
     color:grey;
     cursor:pointer;
   }
+
   /* final not label */
   #finalNot{
     cursor: pointer;

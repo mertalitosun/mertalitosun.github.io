@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+/* içeriklerdeki h1 etiketleri (içerik başlıkları)*/
+#h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* içeriklerdeki p etiketleri (içerik yazıları) */
+p{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.buton{
+    background-color: #fff;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+.main-image{
+background: url(./TQ-HPR50-image/1-TQ-HPR50.webp);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+color: #fff;
+position: relative;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #1a1a1a; */
+
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    align-items: start;
+    height: 100%;
+    margin-left: 56px;
+}
+/* içerikler (arkaplan)*/
+.content{
+    background-color: #000;
+    color: #fff;
+}
+
+/* main altındaki içerik */
+.small-content{
+    margin-top: 30px;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+/* main altındaki içerik-video */
+
+.small-content .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-content{
+    margin-bottom: 30px;
+}
+
+#video{
+    position: relative;
+}
+
+/* video üstündeki yazılar-butonlar */
+.video-text{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+}
+
+
+/* video altındaki içerik (özellikler) */
+
+.features-content{
+    margin: 30px 0px;
+}
+.one-content{
+    margin: 30px 0px;
+    text-align: center;
+}
+.card{
+    margin-bottom: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* batarya içeriği */
+.battery-content{
+    margin: 30px 0px;
+}
+
+.battery-h1{
+    margin-bottom: 80px;
+}
+
+.screan-content{
+    margin-bottom: 50px;
+}
+
+/* kontrol parmaklarınızın ucunda */
+.control-content{
+    margin-top: 50px;
+}
+
+
+.col-text{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.control-image{
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content:left;
+}
+
+.control-image-content{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+}
+
+/* mobil uygulama */
+
+/* resim boyutu */
+#phoneId{
+    width: 100%;
+}
+
+/* içerikler */
+.app-image-text{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+/* Trek */
+.trek-image{
+    position: relative;
+}
+
+/* resim üzerindeki yazı */
+.trek-image-text{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+}
+
+/* bisiklet slider */
+
+.bike-slider{
+    background-color: #fff;
+    color: #000;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 33%;
+  }
+  
+  .slider-item {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: none;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  

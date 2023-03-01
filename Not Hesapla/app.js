@@ -1,3 +1,6 @@
+//tablo
+const tablo = document.querySelector(".tablo");
+
 // vize not
 const vize = document.getElementById("vize");
 
@@ -22,6 +25,8 @@ const fkatki = document.getElementById("fkatki");
 // hesapla butonu
 const hesapla = document.getElementById("hesapla");
 
+//yontemEkle buton
+const yontemEkle = document.querySelector(".yontemEkle");
 // sonuc
 const sonuc = document.getElementById("sonuc");
 
@@ -43,13 +48,33 @@ const minOrt = document.getElementById("mo");
 // min ortalama label
 const minOrtL = document.getElementById("moL");
 
+//tablo rows sayısı 
+var count = tablo.rows.length;
+
+// yeni hesaplama yöntemi ekleme
+yontemEkle.addEventListener("click", ()=>{
+    const tr =`
+    <tr>
+        
+        <td><label for="">YÖNTEM ${count + 1}:</label></td>
+        <td><input type="number" min="0" max="100" placeholder="Yöntem ${count + 1} Notunuzu Giriniz." id="yontem${count + 1}" class="yontemInput"></td>
+        
+        <td><label for="">YÜZDE:</label></td>
+        <td><input type="number" min="0" max="100" value="40" id="vyontem${count + 1}"></td>
+
+        <td><label for="">KATKI:</label></td>
+        <td><label for="" id="vykatki${count + 1}"></label></td>
+    </tr>`;
+    tablo.insertAdjacentHTML("beforeend",tr);
+    count++;
+})
+
 // vize ve final ortalama hesapla
 hesapla.addEventListener("click" ,()=>{
     // vize not değer
     const vn=vize.value;
     // vize yüzde değer
     const vy=vyuzde.value;
-    
     // final not değer
     const fn=final.value;
     // final yüzde değer
@@ -75,7 +100,7 @@ hesapla.addEventListener("click" ,()=>{
             fkatki.innerHTML=fks;
 
             // sonucu ve nihai sonucu yazdır
-            sonuc.innerHTML = "Sonuc: " + ns;
+            sonuc.innerHTML = "Sonuc: " + ns.toFixed(1);
             nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(ns);
         }
         else{
@@ -106,6 +131,7 @@ fnBul.addEventListener("click", ()=>{
     // min ort input
     mo.style.display = "";
 
+    yontemEkle.style.display="none";
     hesapla.style.display="none";
     fnBulHesapla.style.display="";
 })
@@ -152,7 +178,7 @@ fnBulHesapla.addEventListener("click", ()=>{
 
 
             // sonucu ve nihai sonucu yazdir
-            sonuc.innerHTML = "Sonuc: " + fgy;
+            sonuc.innerHTML = "Sonuc: " + fgy.toFixed(1);
             nsonuc.innerHTML = "Nihai Sonuc: " + Math.round(fgy);
         }
         else{
