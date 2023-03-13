@@ -40,6 +40,9 @@ const buttonclose = document.querySelector(".btn-close");
 
 const card = document.querySelectorAll(".card");
 
+const projeEKle = document.querySelector(".carousel-inner");
+
+
 const mod = () =>{
     // mod değiştirme div
     button.classList.toggle("switch-button-dark");
@@ -93,3 +96,48 @@ sun.addEventListener("click",()=>{
 
 
 
+function Projects(projeImg,projeTitle,projeText,projeDesc){
+    this.projeImg = projeImg;
+    this.projeTitle = projeTitle;
+    this.projeText = projeText;
+    this.projeDesc = projeDesc;
+}
+
+let hesapMakinesi = new Projects("./Hesap Makinesi/img/calculator.png","HESAP MAKİNESİ","Html, Css, JavaScript","Javascript öğrenme sürecinde yaptığım proje");
+
+let kronometre = new Projects("./timer_/img/timer.png","KRONOMETRE","Html, Css, JavaScript","Javascript öğrenme sürecinde yaptığım proje");
+
+let todoList = new Projects("./MertaliTodo/todo.png","TO DO LİST","Html, Css, JavaScript","Web tarayıcınızda localhost kullanarak çalışan todo list projesi");
+
+let notHesapla = new Projects("./Not Hesapla/img/nothesapla.png","NOT HESAPLA","Html, Css, JavaScript","Dersin not ortalamasını ve dersi geçebilmek için final notunuzun kaç olması gerektiğini hesaplar.");
+
+let havaDurummu = new Projects("./havaDurumu/havaDurumu.png", "ANLIK HAVA DURUMU", "Html, Css, JavaScript", "Api öğrenme sürecimdeki Fetch Api ile ilk projem.");
+
+function projeOlustur(projeAdi){
+    let div = `
+    <div class="carousel-item">
+    <div class="card shadow-lg p-3 mb-5 bg-body rounded container" style="width: 24rem;">
+        <img src="${projeAdi.projeImg}" class="card-img-top img-fluit" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">${projeAdi.projeTitle}</h5>
+          <p class="card-text">${projeAdi.projeText}</p>
+          <p class="card-text">${projeAdi.projeDesc}</p>
+          <a href="Hesap Makinesi/calculator.html" class="btn btn-warning d-flex justify-content-center" target="_blank">GÖRÜNTÜLE</a>
+        </div>
+    </div>
+  </div>
+    `;
+
+    projeEKle.insertAdjacentHTML("beforeend",div);
+
+}
+
+projeOlustur(hesapMakinesi);
+projeOlustur(kronometre);
+projeOlustur(todoList);
+projeOlustur(notHesapla);
+projeOlustur(havaDurummu);
+
+
+
+               
