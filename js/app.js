@@ -96,22 +96,23 @@ sun.addEventListener("click",()=>{
 
 
 
-function Projects(projeImg,projeTitle,projeText,projeDesc){
+function Projects(projeName,projeImg,projeTitle,projeText,projeDesc){
+    this.projeName = projeName;
     this.projeImg = projeImg;
     this.projeTitle = projeTitle;
     this.projeText = projeText;
     this.projeDesc = projeDesc;
 }
 
-let hesapMakinesi = new Projects("./Hesap Makinesi/img/calculator.png","HESAP MAKİNESİ","Html, Css, JavaScript","Javascript öğrenme sürecinde yaptığım proje");
+let hesapMakinesi = new Projects("hesapMakinesi","./hesapMakinesi/img/calculator.png","HESAP MAKİNESİ","Html, Css, JavaScript","Javascript öğrenme sürecinde yaptığım proje");
 
-let kronometre = new Projects("./timer_/img/timer.png","KRONOMETRE","Html, Css, JavaScript","Javascript öğrenme sürecinde yaptığım proje");
+let timer_ = new Projects("timer_","./timer_/img/timer.png","KRONOMETRE","Html, Css, JavaScript","Javascript öğrenme sürecinde yaptığım proje");
 
-let todoList = new Projects("./MertaliTodo/todo.png","TO DO LİST","Html, Css, JavaScript","Web tarayıcınızda localhost kullanarak çalışan todo list projesi");
+let mertaliTodo = new Projects("mertaliTodo","./mertaliTodo/todo.png","TO DO LİST","Html, Css, JavaScript","Web tarayıcınızda localhost kullanarak çalışan todo list projesi");
 
-let notHesapla = new Projects("./Not Hesapla/img/nothesapla.png","NOT HESAPLA","Html, Css, JavaScript","Dersin not ortalamasını ve dersi geçebilmek için final notunuzun kaç olması gerektiğini hesaplar.");
+let notHesapla = new Projects("notHesapla","./notHesapla/img/nothesapla.png","NOT HESAPLA","Html, Css, JavaScript","Dersin not ortalamasını ve dersi geçebilmek için final notunuzun kaç olması gerektiğini hesaplar.");
 
-let havaDurummu = new Projects("./havaDurumu/havaDurumu.png", "ANLIK HAVA DURUMU", "Html, Css, JavaScript", "Api öğrenme sürecimdeki Fetch Api ile ilk projem.");
+let havaDurumu = new Projects("havaDurumu","./havaDurumu/havaDurumu.png", "ANLIK HAVA DURUMU", "Html, Css, JavaScript", "Api öğrenme sürecimdeki Fetch Api ile ilk projem.");
 
 function projeOlustur(projeAdi){
     let div = `
@@ -122,7 +123,7 @@ function projeOlustur(projeAdi){
           <h5 class="card-title text-center">${projeAdi.projeTitle}</h5>
           <p class="card-text">${projeAdi.projeText}</p>
           <p class="card-text">${projeAdi.projeDesc}</p>
-          <a href="Hesap Makinesi/calculator.html" class="btn btn-warning d-flex justify-content-center" target="_blank">GÖRÜNTÜLE</a>
+          <a href="./${projeAdi.projeName}/${projeAdi.projeName}.html" class="btn btn-warning d-flex justify-content-center" target="_blank">GÖRÜNTÜLE</a>
         </div>
     </div>
   </div>
@@ -133,10 +134,10 @@ function projeOlustur(projeAdi){
 }
 
 projeOlustur(hesapMakinesi);
-projeOlustur(kronometre);
-projeOlustur(todoList);
+projeOlustur(timer_);
+projeOlustur(mertaliTodo);
 projeOlustur(notHesapla);
-projeOlustur(havaDurummu);
+projeOlustur(havaDurumu);
 
 
 
