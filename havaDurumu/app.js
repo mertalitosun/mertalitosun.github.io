@@ -4,11 +4,13 @@ const temp = document.querySelector(".temp");
 const desc = document.querySelector(".desc");
 const minmax = document.querySelector(".minmax");
 
-
 const apiKey = "1556d128250ef68cd638fbf33c0abc5c";
 
 //  hava durumu raporu al
 const sehirUrl = "https://api.openweathermap.org/data/2.5/";
+
+// konumu şehire dönüştüren api
+const konumUrl = "http://api.openweathermap.org/geo/1.0/reverse?";
 
 
 // enter a basınca işlem yapma fonk.
@@ -17,6 +19,30 @@ const enter = (e) => {
         havaDurumuApi(searchBar.value);
     }
 }
+
+// konuma göre şehir bulur ve searchBar'a yazar
+const sehirBul = () =>{
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(basarili, basarisiz);
+    }    
+    
+    function basarisiz(hata){
+        alert(`${hata.message}`)
+    }
+    
+    function basarili(lat){
+        let query = `${konumUrl}lat=${lat.coords.latitude}&lon=${lat.coords.longitude}&appid=${apiKey}`
+        fetch(query)
+        .then(response =>{
+            return response.json()
+        })
+        .then(data =>{
+            searchBar.value = data[0].name
+            havaDurumuApi(data[0].name)
+        })
+    }
+}
+
 
 const havaDurumuApi = (cityName) =>{
     if(cityName){
@@ -51,3 +77,8 @@ const hata = () =>{
 }
 
 searchBar.addEventListener("keypress", enter);
+window.addEventListener("load", sehirBul)
+
+
+
+
