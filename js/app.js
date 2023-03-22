@@ -114,6 +114,8 @@ let notHesapla = new Projects("notHesapla","./notHesapla/img/nothesapla.png","NO
 
 let havaDurumu = new Projects("havaDurumu","./havaDurumu/havaDurumu.png", "ANLIK HAVA DURUMU", "Html, Css, JavaScript", "Api öğrenme sürecimdeki Fetch Api ile ilk projem.");
 
+let klimaBtu = new Projects("klimaBtu","./klimaBtu/klimabtu.png","KLİMA BTU HESAPLAMA ARACI","Html, Css, JavaScript","Tasarımına özen gösterilmeden sadece hesaplamanın doğru olmasına dikkat edilerek kodlanmış projedir. İhtiyacımız olan klima BTU hesabını yapar.");
+
 function projeOlustur(projeAdi){
     let div = `
     <div class="carousel-item">
@@ -138,6 +140,8 @@ projeOlustur(timer_);
 projeOlustur(mertaliTodo);
 projeOlustur(notHesapla);
 projeOlustur(havaDurumu);
+projeOlustur(klimaBtu);
+
 
 
 
