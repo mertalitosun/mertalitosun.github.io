@@ -116,6 +116,8 @@ let havaDurumu = new Projects("havaDurumu","./havaDurumu/havaDurumu.png", "ANLIK
 
 let klimaBtu = new Projects("klimaBtu","./klimaBtu/klimabtu.png","KLİMA BTU HESAPLAMA ARACI","Html, Css, JavaScript","Tasarımına özen gösterilmeden sadece hesaplamanın doğru olmasına dikkat edilerek kodlanmış projedir. İhtiyacımız olan klima BTU hesabını yapar.");
 
+let bionlukHesaplama = new Projects("bionlukHesaplama","./bionlukHesaplama/bionlukHesaplama.png","BİONLUK TAHSİL EDİLEN NET ÜCRET HESAPLAMA ARACI","Html, Css, JavaScript","Bionluk üzerinden teklif verirken bionluk komisyon oranı kesilmiş ücreti hesaplama işlemini gerçekleştirir.");
+
 function projeOlustur(projeAdi){
     let div = `
     <div class="carousel-item">
@@ -141,6 +143,8 @@ projeOlustur(mertaliTodo);
 projeOlustur(notHesapla);
 projeOlustur(havaDurumu);
 projeOlustur(klimaBtu);
+projeOlustur(bionlukHesaplama);
+
 
 
 
