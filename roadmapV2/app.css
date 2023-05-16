@@ -10,7 +10,9 @@ body{
     background-color: #FCFCFD;
     overflow-x: hidden;
 }
-
+.head p{
+    text-align: center;
+}
 ul a{
     text-decoration: none;
     color: #344054;
