@@ -8,6 +8,7 @@
 
 body{
     background-color: #FCFCFD;
+    overflow-x: hidden;
 }
 
 ul a{
@@ -192,17 +193,18 @@ li{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
+
 /* yuvarlak */
 .yuvarlakL{
     display: flex;
-    align-items:start;
+    align-items:center;
     justify-content: center;
     width: 100px;
     height: 100px;
-    border: 8px #BAEF58 solid;
+    border: 10px #BAEF58 solid;
     background-color: #F2F2F2;
     border-radius: 50px;
-    font-size:50px;
+    font-size:70px;
     font-weight: bold;
     font-family: 'Sora', sans-serif;
 }
@@ -211,69 +213,69 @@ li{
 .i1{
     position: absolute;
     top: 190px;
-    left: 130px;
+    left: 50px;
 }
 
 /* yuvarlak1 */
 .y1{
     position: absolute;
-    top: 220px;
-    left: 430px;
+    top: 240px;
+    left: 450px;
 }
 
 /* içerik2 */
 .i2{
     position: absolute;
     top: 430px;
-    right: 160px;
+    right: 50px;
 }
 /* yuvarlak2 */
 .y2{
     position: absolute;
-    top: 450px;
-    right: 60px;
+    top: 470px;
+    right: 63px;
 }
 
 /* içerik3 */
 .i3{
     position: absolute;
     top: 660px;
-    left: 130px;
+    left: 50px;
 }
 
 /* yuvarlak3 */
 .y3{
     position: absolute;
-    top: 670px;
-    left: 430px;
+    top: 690px;
+    left: 450px;
 }
 
 /* içerik4 */
 .i4{
     position: absolute;
     top: 870px;
-    right: 160px;
+    right: 20px;
 }
 
 /* yuvarlak4 */
 .y4{
     position: absolute;
-    top: 890px;
-    right: 50px;
+    top: 910px;
+    right: 63px;
 }
 
 /* içerik5 */
 .i5{
     position: absolute;
     top: 1100px;
-    left: 130px;
+    left: 50px;
 }
 
 /* yuvarlak5 */
 .y5{
     position: absolute;
-    top: 1110px;
-    left: 430px;
+    top: 1120px;
+    left: 453px;
 }
 
 
@@ -283,7 +285,7 @@ li{
 }
 .cizgi{
     height: 0px;
-    width: 65px;
+    width: 45px;
     border: 1px solid #A6DE3E;
 }
 .nokta{
@@ -297,34 +299,38 @@ li{
 /* arrow-1 */
 .arrow1{
 position: absolute;
-top: 190px;
+top: 220px;
 right: 493px;
 }
 
 /* arrow-2 */
 .arrow-left1{
 position: absolute;
-top: 430px;
+top: 450px;
 left: 510px;
 }
 
 /* arrow-3 */
 .arrow2{
     position: absolute;
-    top: 640px;
+    top: 660px;
     right: 493px;
 }
 
 /* .arrow-4 */
 .arrow-left2{
     position: absolute;
-    top: 870px;
-    left: 520px;
+    top: 890px;
+    left: 510px;
 }
 
 /* arrow-5 */
 .arrow3{
     position: absolute;
-    top: 1080px;
-    right: 493px;
+    top: 1095px;
+    right: 490px;
+}
+
+.bolum1, .bolum2, .bolum3, .bolum4, .bolum5{
+
 }
