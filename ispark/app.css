@@ -19,9 +19,12 @@ ul{
     border-bottom: 1px solid #8b8b8b !important;
 }
 
-.header ul a{
+.header ul li a{
     color: #8b8b8b !important;
     font-weight: 700;
+}
+.header ul li a i{
+    color: #8b8b8b !important;
 }
 .banner{
     margin-top: 60px;
@@ -62,7 +65,7 @@ ul{
     border-radius: 50px;
     margin-bottom: 100px;
     background-color: #414042;
-    color: #fff !important;
+    color: #fff ;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -70,7 +73,7 @@ ul{
     cursor: pointer;
 }
 .buton a{
-    color: #fff !important;
+    color: #fff ;
 }
 .boxes .row{
     margin-bottom: 30px;
@@ -150,6 +153,9 @@ footer ul li a{
     text-decoration: none;
     color: #fff !important;
     font-size: 30px;
+}
+footer ul li a i{
+    color: #fff !important;
 }
 footer ul li a:hover{
     color: #fff !important;
