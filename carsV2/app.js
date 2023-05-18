@@ -1,21 +1,21 @@
-var paperMenu = {
-    window: document.querySelector('#paper-window'),
-    paperFront: document.querySelector('#paper-front'),
-    hamburger: document.querySelector('.hamburger'),
-    offset: 1800,
-    pageHeight: document.querySelector('#paper-front').offsetHeight,
+let paperMenu = {
+  window: document.getElementById('paper-window'),
+  paperFront: document.getElementById('paper-front'),
+  hamburger: document.querySelector('.hamburger'),
+  offset: 1800,
+  pageHeight: document.getElementById('paper-front').offsetHeight,
   
     open: function() {
       this.window.classList.add('tilt');
       this.hamburger.removeEventListener('click', this.open);
-      document.querySelector('#container').addEventListener('click', this.close.bind(this));
+      document.getElementById('container').addEventListener('click', this.close.bind(this));
       document.querySelector('.hamburger').addEventListener('click', this.close.bind(this));
       this.hamburgerFix(true);
       console.log('opening...');
     },
     close: function() {
       this.window.classList.remove('tilt');
-      document.querySelector('#container').removeEventListener('click', this.close);
+      document.getElementById('container').removeEventListener('click', this.close);
       document.querySelector('.hamburger').removeEventListener('click', this.close);
       this.hamburger.addEventListener('click', this.open.bind(this));
       this.hamburgerFix(false);
@@ -48,5 +48,5 @@ var paperMenu = {
     },
   };
   
-  paperMenu.init();
+paperMenu.init();
   
