@@ -186,8 +186,4 @@ footer ul li a:hover{
   }
 
 
-  @media (prefers-color-scheme: dark) {
-   a, p, h2, h3{
-    color: #FFF;
-   }
-  }
+  
