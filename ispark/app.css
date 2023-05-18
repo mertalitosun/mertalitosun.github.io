@@ -20,7 +20,7 @@ ul{
 }
 
 .header ul a{
-    color: #8b8b8b;
+    color: #8b8b8b !important;
     font-weight: 700;
 }
 .banner{
@@ -62,14 +62,16 @@ ul{
     border-radius: 50px;
     margin-bottom: 100px;
     background-color: #414042;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     align-items: center;
     justify-content: center; 
     font-size: 13px;
     cursor: pointer;
 }
-
+.buton a{
+    color: #fff !important;
+}
 .boxes .row{
     margin-bottom: 30px;
 }
@@ -146,7 +148,7 @@ footer ul {
 
 footer ul li a{
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
     font-size: 30px;
 }
 footer ul li a:hover{
