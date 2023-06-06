@@ -20,10 +20,13 @@ body{
     color: #fff;
     position: relative;
 }
+.btn:hover{
+    transition: .9s;
+}
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #343a40;
     opacity: 0.8;
     color: #fff;
@@ -33,9 +36,11 @@ body{
     height: 70px;
     padding: 0 3rem;
 }
-
 .navbar span{
     color: #409d21;
+}
+.wpM{
+    display: none;
 }
 .main-header::before {
     content: '';
@@ -54,10 +59,27 @@ body{
     text-align: center;
     height: 100%;
 }
+
 .main-header * {
     z-index: 5;
 }
-
+.downArrow{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.downArrow h3{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #8c8b8b;
+}
+.downArrow h5{
+    margin-top: 20px;
+    font-size: 15px;
+    opacity: .5;
+}
 .urunler{
     margin-top: 30px;
 }
@@ -65,7 +87,18 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.whatsapp a{
+.card-body p{
+    font-size: 12px;
+    opacity: .5;
+}
+.card-body {
+   text-align: center;
+}
+.card-body .btn{
+    background-color: #f9014f;
+    color: #fff;
+}
+/* .whatsapp a{
     text-decoration: none;
     color: #00e676;
 }
@@ -76,10 +109,21 @@ body{
     height: 60px;
     width: 60px;
     font-size: 35px;
-}
+} */
 @media screen and (max-width: 600px) {
     .col-md-3{
         margin-left: 30px;
         margin-bottom: 20px;
+    }
+    .navbar .wp{
+        display: none;
+    }
+    .navbar .brand{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wpM{
+        display: block;
+        text-align: center;
     }
   }
