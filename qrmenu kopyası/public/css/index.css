@@ -1,0 +1,45 @@
+.backButton{
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    font-size: 50px;
+    color: #000;   
+}
+
+.card{
+    /* position: relative;
+    transition: .5s; */
+    border-radius: 14px;
+}
+
+/* .card-img-top{
+    transition: .5s;
+
+}
+.card::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.category-name{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    color: #fff;
+} */
+
+.urun-aciklama{
+    font-size: 10px;
+}
+.menus{
+    max-width: 750px;
+}
+
+body{
+    background-color: #F5F7F8 !important;
+}
