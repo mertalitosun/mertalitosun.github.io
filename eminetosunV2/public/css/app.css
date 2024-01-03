@@ -183,7 +183,6 @@ body {
  }
  @media screen and (max-width: 600px) {
     .header {
-        background-position: right;
-        
+        background-position: right !important;
     }
   }
