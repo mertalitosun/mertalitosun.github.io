@@ -2,7 +2,15 @@ const day = document.getElementById("day");
 const hour = document.getElementById("hour");
 const min = document.getElementById("min");
 const sec = document.getElementById("sec");
+const loadingPage = document.getElementById("loadingPage");
+const content = document.getElementById("content");
 
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(function () {
+    loadingPage.style.display = "none";
+    content.style.display = "block";
+  }, 1000);
+});
 function updateTime() {
   const now = new Date().getTime();
   console.log(now);
@@ -23,9 +31,9 @@ function updateTime() {
     hour.innerHTML = `${parseInt(hours % 24)}`;
     min.innerHTML = `${parseInt(minutes % 60)}`;
     sec.innerHTML = `${parseInt(seconds % 60)}`;
-    setTimeout(updateTime,1000)
-  }else{
-    day.innerHTML="bitti"
+    setTimeout(updateTime, 1000);
+  } else {
+    day.innerHTML = "bitti";
   }
 }
 updateTime();
