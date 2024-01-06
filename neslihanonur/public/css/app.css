@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;400;800&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -179,6 +175,17 @@ body {
  }
  /* MEMORIES */
 
+ .memories-img{
+    position: relative;
+ }
+ #touchIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    transform: rotate(-20deg);
+ }
+ 
  .memories-img .row{
     margin-top: 15px;
  }
