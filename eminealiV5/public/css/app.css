@@ -232,3 +232,10 @@ body {
     content: "01/01/2024";
 
  }
+
+ @media screen and (max-width: 700px) {
+    .memories-img .row .col-md-4, .memories-img .row .col-12{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+  }
