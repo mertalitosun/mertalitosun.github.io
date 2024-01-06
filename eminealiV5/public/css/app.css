@@ -178,7 +178,16 @@ body {
     color: #000;
  }
  /* MEMORIES */
-
+ .memories-img{
+    position: relative;
+ }
+ #touchIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    transform: rotate(-20deg);
+ }
  .memories-img .row{
     margin-top: 15px;
  }
