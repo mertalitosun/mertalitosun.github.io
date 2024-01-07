@@ -117,14 +117,15 @@ a{
 }
  /* LOCATION */
  .loc{
-    height: 30px;
+    height: 50px;
     width: 300px;
-    border: 2px solid #000;
-    border-radius: 50px;
+    border: 2px solid #b6e3d2;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    background-color: #b6e3d2;
  }
  .loc a{
     text-decoration: none;
