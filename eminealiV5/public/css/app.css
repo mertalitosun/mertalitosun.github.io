@@ -152,6 +152,11 @@ body {
 .fun .funTime{
     font-size: 20px;
 }
+.funAdr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* WEDDING */
 .wedding{
     display: flex;
