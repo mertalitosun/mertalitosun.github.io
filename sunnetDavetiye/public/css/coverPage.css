@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@200;400;800&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #b6e3d2;
+}
+a{
+    text-decoration: none;
+}
+.loadingPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+.content{
+    display: none;
+}
+
+.fonts {
+    font-family: 'Charm', cursive;
+    font-size: 25px;
+}
+
+.header {
+    background: url(../image/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.openEvent{
+    position: absolute;
+    bottom: 50px;
+}
+.openEvent .btn:hover{
+    background: linear-gradient(#43766C,#80BCBD);
+}
+.openEvent .btn{
+    background: linear-gradient(#b6e3d2,#80BCBD);
+    
+}
+.openEvent .btn a{
+    color: #000;
+}
