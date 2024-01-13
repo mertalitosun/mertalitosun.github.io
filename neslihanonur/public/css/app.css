@@ -11,7 +11,9 @@
 body {
     font-family: 'Montserrat', sans-serif; 
 }
-
+a{
+    text-decoration: none;
+}
 .loadingPage{
     display: flex;
     align-items: center;
@@ -69,7 +71,7 @@ body {
 .mouse {
     height: 40px;  
     width: 20px;   
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius: 50px;
     z-index: 1000;
 }
@@ -77,7 +79,7 @@ body {
 .mouse-scroll {
     height: 10px;  
     width: 4px;    
-    background-color: #fff;
+    background-color: #000;
     z-index: 1000;
     margin-left: auto;
     margin-right: auto;
@@ -95,7 +97,7 @@ body {
 /* TİMER */
 
 #day, #hour, #min, #sec{
-    color: red;
+    color: #84a16d;
 }
 .eventTime{
     display: flex;
@@ -152,6 +154,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+.wedding a{
+    text-decoration: none;
+}
 .wedding-img{
     margin-bottom: 20px;
    text-align: center;
@@ -164,13 +169,13 @@ body {
  .loc{
     height: 50px;
     width: 300px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+    color: #fff;
     background-color: #84a16d;
  }
  .loc a{
@@ -180,7 +185,12 @@ body {
  .loc .bi-map{
     color: #fff;
  }
-
+ .bi-arrow-right{
+    transition: .5s;
+ }
+.loc:hover .bi-arrow-right{
+    transform: translate(15px);
+}
  /* MEMORIES */
  .memories-img{
     position: relative;
@@ -200,6 +210,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+ }
+ .memories-img .row .col-md-4{
+    margin-bottom: 20px;
  }
  .card{
     position: relative;
@@ -245,3 +258,23 @@ body {
     content: "01/01/2024";
  }
 
+ .footer{
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84a16d;
+    height: 65px;
+ }
+ .footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .footer .container p{
+    margin: 0;
+ }
+ .footer a{
+    color: #fff;
+ }
