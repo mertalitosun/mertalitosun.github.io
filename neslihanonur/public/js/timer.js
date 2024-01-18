@@ -2,7 +2,7 @@ const day = document.getElementById("day");
 const hour = document.getElementById("hour");
 const min = document.getElementById("min");
 const sec = document.getElementById("sec");
-const time=document.querySelector(".time");
+const time = document.querySelector(".time");
 const loadingPage = document.getElementById("loadingPage");
 const content = document.getElementById("content");
 const timers = document.querySelector(".timers");
@@ -36,8 +36,8 @@ function updateTime() {
     sec.innerHTML = `${parseInt(seconds % 60)}`;
     setTimeout(updateTime, 1000);
   } else {
-    time.style.display="none"
-    timers.style.display="block"
+    time.style.display = "none";
+    timers.style.display = "block";
   }
 }
 updateTime();

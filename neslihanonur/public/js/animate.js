@@ -2,7 +2,6 @@ const animate = document.querySelectorAll(".animate");
 
 document.addEventListener("scroll", () => {
   const windowScrollY = window.scrollY;
-  console.log(windowScrollY);
   for (let i = 0; i < animate.length; i++) {
     if (windowScrollY > 500) {
       animate[0].style.opacity = 1;

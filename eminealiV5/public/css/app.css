@@ -14,7 +14,9 @@
 body {
     font-family: 'Montserrat', sans-serif; 
 }
-
+a{
+    text-decoration: none;
+}
 .loadingPage{
     display: flex;
     align-items: center;
@@ -171,18 +173,28 @@ body {
  .loc{
     height: 50px;
     width: 300px;
-    border: 2px solid #99af89;
-    background-color: #99af89;
-    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    background-color: #84a16d;
  }
  .loc a{
     text-decoration: none;
     color: #fff;
- }
+}
+    .loc .bi-map{
+    color: #fff;
+    }
+    .bi-arrow-right{
+    transition: .5s;
+    }
+    .loc:hover .bi-arrow-right{
+    transform: translate(15px);
+    }
  /* MEMORIES */
  .memories-img{
     position: relative;
