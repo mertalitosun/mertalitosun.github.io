@@ -16,6 +16,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>     
 
     <title>Neslihan&Onur</title>
+    <style>
+       swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+    </style>
 </head>
 <body>
     <div class="loadingPage" id="loadingPage">
@@ -159,6 +182,29 @@
         </div>
     </div>
   
+    <div class="container">
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+        slides-per-view="2">
+        <swiper-slide>
+            <img src="public/image/neslihan-onur-1.jpg" alt="" class="card-img-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="public/image/neslihan-onur-2.jpg" alt="" class="card-img-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="public/image/neslihan-onur-3.jpg" alt="" class="card-img-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="public/image/neslihan-onur-4.jpg" alt="" class="card-img-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="public/image/neslihan-onur-5.jpg" alt="" class="card-img-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="public/image/neslihan-onur-6.jpg" alt="" class="card-img-top">
+        </swiper-slide>
+      </swiper-container>
+    </div>
     
     <footer class="footer">
         <div class="container">
@@ -174,6 +220,7 @@
     <script src="./public/js/app.js"></script>
     <script src="./public/js/animate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 </body>
 </html>
