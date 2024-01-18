@@ -3,16 +3,9 @@ const hour = document.getElementById("hour");
 const min = document.getElementById("min");
 const sec = document.getElementById("sec");
 const time = document.querySelector(".time");
-const loadingPage = document.getElementById("loadingPage");
-const content = document.getElementById("content");
+
 const timers = document.querySelector(".timers");
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(function () {
-    loadingPage.style.display = "none";
-    content.style.display = "block";
-  }, 1000);
-});
 function updateTime() {
   const now = new Date().getTime();
   console.log(now);
