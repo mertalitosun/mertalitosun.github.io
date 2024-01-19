@@ -1,6 +1,6 @@
 const loadingPage = document.getElementById("loadingPage");
 const content = document.getElementById("content");
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   setTimeout(function () {
     loadingPage.style.display = "none";
     content.style.display = "block";
