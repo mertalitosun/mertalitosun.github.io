@@ -1,5 +1,7 @@
 const touchIcon = document.getElementById("touchIcon");
 const audioButton = document.getElementById("audioButton");
+const audio = document.getElementById("audio");
+
 
 // audio play/pause
 audioButton.addEventListener("click",()=>{
