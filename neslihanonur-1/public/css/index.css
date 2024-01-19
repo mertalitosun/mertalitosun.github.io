@@ -116,3 +116,8 @@ a{
         left: 33%;
     }
   }
+
+
+  .homePage{
+    display: none;
+  }
