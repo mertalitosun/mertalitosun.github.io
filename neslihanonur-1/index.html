@@ -11,25 +11,31 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
      <!-- CSS -->
      <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+
      <!-- ANIMATE.CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <title>Neslihan&Onur</title>
 </head>
 
 <body>
+    <!-- LOADINGPAGE -->
     <div class="loadingPage" id="loadingPage">
         <div class="" role="status">
             <div id="davintyText">davinty</div>
         </div>
     </div>
-    <div class="content container" id="content">
+
+    <!-- INDEX -->
+    <div class="index container" id="index">
         <header class="header">
-            <div class="couple-img">
+            <div class="coupleImg">
                 <img src="public/image/names.gif" alt="" class="card-img-top" style="width: 100%;">
             </div>
         </header>
+
         <!-- DATE -->
-        <div class="event-date">
+        <div class="indexEventDate">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -43,9 +49,9 @@
 
                     <div class="col-md-2 col-4">
                         <div id="date-full">
-                            <div class="date-month">ŞUBAT</div>
-                            <div class="date-day-number fonts">10</div>
-                            <div class="date-year">2024</div>
+                            <div class="dateMonth">ŞUBAT</div>
+                            <div class="dateDayNumber fonts">10</div>
+                            <div class="dateYear">2024</div>
                         </div>
                     </div>
 
@@ -60,12 +66,13 @@
                 </div>
             </div>
         </div>
+
         <!-- FAMILY -->
         <div class="family">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-6">
-                        <div class="family-names">
+                        <div class="familyNames">
                             Selahattin & Yurdagül
                             <div class="family-surname">
                                 KAPLAN
@@ -73,7 +80,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-6">
-                        <div class="family-names">
+                        <div class="familyNames">
                             Mustafa Arslan & Güzin
                             <div class="family-surname">
                                 KÜKRER
@@ -83,11 +90,167 @@
                 </div>
             </div>
         </div>
+
         <!-- OPEN BUTTON -->
         <div class="openEvent" id="openEvent">
-            <div class="btn"><a href="homePage.html">Davetiyeyi Aç</a></div>
+            <div class="btn">Davetiyeyi Aç</div>
         </div>
     </div>
+
+    <!-- ----- HOME PAGE ----- -->
+    <div class="audioButton" id="audioButton">
+        <span class="material-symbols-outlined">
+        play_arrow
+        </span>
+    </div>
+    <!-- CONTENT -->
+    <div class="content" id="content">
+        <audio src="public/audio/[PIANO TUTORIAL] Victors Piano Solo - Tim Burtons Corpse Bride (Piano Cover, Synthesia, Movie) (mp3cut.net).mp3" autoplay loop id="audio">
+        </audio>
+        <header class="header">
+            <div class="title fontsI text-center" style="font-size: 30px !important;">
+            </div>
+            <div class="coupleImg mt-5">
+                <img src="public/image/names.png" alt="" class="card-img-top" style="width: 100%;">
+            </div>
+            <div class="mouse mt-5">
+                <div class="mouseScroll animate__animated animate__fadeOutDown animate__infinite animate__slow	2s"></div>
+            </div>
+        </header>
+    
+        <!-- EVENT TIME -->
+        <div class="container mt-5 animate">
+            <h1 class="fontsI text-center">Etkinlik Zamanı</h1>
+            <hr>
+            <div class="eventTime">
+                <div class="container">
+                    <div class="eventDate mt-5 mb-5 fontsI text-center" style="font-size: 40px;"><b>10 Şubat 2024, Cumartesi</b></div>
+                    <div class="timer">
+                        <div class="row fontsI time">
+                            <div class="col-3">
+                                <div class="tb">
+                                    <div id="day" class="number"></div><div class="timerText">Gün</div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tb">
+                                    <div id="hour" class="number"></div><div class="timerText">Saat</div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tb">
+                                    <div id="min" class="number"></div><div class="timerText">Dakika</div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tb">
+                                    <div id="sec" class="number"></div><div class="timerText">Saniye</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row timers">
+                            <div class="col-12" >
+                                <!-- <h1 class="fonts"> Mutluluğumuza ortak olduğunuz için <br> teşekkürler </h1> -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <!-- WEDDING -->
+            <div class="container wedding animate">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wedding mt-5">
+                            <div class="container">
+                                <h1 class="fontsI text-center">NİKAH</h1>
+                                <hr>
+                                <div class="wedding-img">
+                                <img src="../neslihanonur-1/public/image/wedding-rings-svgrepo-com (2).svg" alt="">
+                                </div>
+                                <div class="weddingTime fontsI mb-3 text-center">10 Şubat 2024, Cumartesi Saat 14:00</div>
+                                <div class="weddingAdr fontsI text-center"><b>Kentpark Palas Nikah Salonu</b><br><br>Şeker, Ahmet Hamit Dedelek Blv No:4, 26120 Tepebaşı/Eskişehir</div>
+                                <a href="https://maps.app.goo.gl/AgdthG9XoFcaRxMA6" target="_blank">
+                                    <div class="weddingLoc loc text-center mt-3">
+                                        <i class="bi bi-map"></i>
+                                        Yol Tarifi
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <!-- MEMORIES -->
+        <div class="container mt-5 animate">
+            <div class="memories">
+                <h1 class="fontsI text-center">Anılarımız</h1>
+                <hr>
+                <div class="memories-img">
+                    <span class="material-symbols-outlined" id="touchIcon">
+                        touch_app
+                    </span>
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: 18rem;" id="img-1">
+                                <img src="public/image/neslihan-onur-1.jpg" alt="" class="card-img-top">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: 18rem;" id="img-2">
+                                <img src="public/image/neslihan-onur-2.jpg" alt="" class="card-img-top">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: 18rem;" id="img-3">
+                                <img src="public/image/neslihan-onur-3.jpg" alt="" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: 18rem;" id="img-4">
+                                <img src="public/image/neslihan-onur-4.jpg" alt="" class="card-img-top">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: 18rem;" id="img-5">
+                                <img src="public/image/neslihan-onur-5.jpg" alt="" class="card-img-top">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 col-12">
+                            <div class="card" style="width: 18rem;" id="img-6">
+                                <img src="public/image/neslihan-onur-6.jpg" alt="" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- EVENT DESCRIPTION -->
+        <div class="container d-flex align-items-center justify-content-center mt-5">
+            <p class="fontsI" style="font-size: 14px;"> Mutluluk paylaştıkça büyür. Mutluluğumuzu paylaşmaya sizleri de bekliyoruz</p>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <p>&copy; 2024 <a href="https://davinty.com/">Davinty</a> All Rights Reserved.</p>
+        </div>
+    </footer>   
+
+
 
 
      <!-- BOOTSTRAP@5.3.2 -->
@@ -95,15 +258,10 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>  
      <!-- SCRİPT -->
     <script src="./public/js/loadingPage.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded",()=>{
-            const audio = document.getElementById("audio");
-            const openEvent = document.getElementById("openEvent");
-            openEvent.addEventListener("click",()=>{
-                audio.play();
-        });
-        })
+    <script src="./public/js/app.js"></script>
+    <script src="./public/js/animate.js"></script>
+    <script src="./public/js/timer.js"></script>
+    <script src="./public/js/audio.js"></script>
 
-    </script>
 </body>
 </html>

@@ -25,17 +25,14 @@ top: 0;
 left: 0;
 background-color: #000;
 }
-.content{
-display: none;
-}
 
-.fonts {
+
+.fontsI {
 font-family: 'Rajdhani', sans-serif;
 font-size: 25px;
 }
 
 .header {
-height: 700px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -58,13 +55,11 @@ margin-bottom: 20px;
 font-size: 80px;
 }
 
-
-
-.couple-name {
+.coupleName {
 font-size: 60px;
 }
 
-.date {
+.eventDate {
 font-size: 20px;
 z-index: 1000;
 }
@@ -77,7 +72,7 @@ border-radius: 50px;
 z-index: 1000;
 }
 
-.mouse-scroll {
+.mouseScroll {
 height: 10px;  
 width: 4px;    
 background-color: #000;
@@ -88,7 +83,7 @@ border-radius: 50px;
 margin-top: 2px;  
 }
 
-.mouse-text {
+.mouseText {
 color: #fff;
 z-index: 1000;
 font-size: 14px; 
@@ -260,11 +255,12 @@ content: "01/01/2024";
 }
 
 .footer{
+display: none;
 color: #000;
 font-size: 14px;
-display: flex;
+/* display: flex;
 align-items: center;
-justify-content: center;
+justify-content: center; */
 background-color: #84a16d;
 height: 30px;
 }
@@ -279,33 +275,13 @@ margin: 0;
 .footer a{
 color: #fff;
 }
-
-swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   
 .animate{
     opacity: 0;
-    transition: .7s ease-in-out;
+    transition: .8s ease-in-out;
 }
 .audioButton{
+  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;

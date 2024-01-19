@@ -11,10 +11,7 @@ body {
 a{
     text-decoration: none;
 }
-.fonts {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 25px;
-}
+
 .loadingPage{
     display: flex;
     align-items: center;
@@ -24,6 +21,9 @@ a{
     top: 0;
     left: 0;
     background-color: #000;
+}
+.index{
+    display: none;
 }
 .content{
     display: none;
@@ -41,20 +41,21 @@ a{
     justify-content: center;
     background-attachment: fixed;
 }
-.couple-img{
+.coupleImg{
     margin-top: 30px;
 }
 
-.event-date{
+.indexEventDate{
     margin-top: 15px;
 }
-.event-date .row{
+.indexEventDate .row{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
 }
-.event-date .col-md-2{
+.indexEventDate .col-md-2{
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -70,27 +71,27 @@ a{
     border-bottom: 2px solid #000;
 }
 
-.date-month, .date-day-number, .date-year{
+.dateMonth, .dateDayNumber, .dateYear{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.date-day-number{
+.dateDayNumber{
     font-size: 90px;
 }
 .family{
     margin-top: 10px;
 }
-.family .col-md-4{
+.family .col-md-6{
     margin-top: 30px;
 }
-.family-names{
+.familyNames{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.family-names, .family-surname{
+.familyNames, .family-surname{
     font-size: 13px;
     font-weight: 100;
 }
@@ -115,9 +116,4 @@ a{
     .openEvent {
         left: 33%;
     }
-  }
-
-
-  .homePage{
-    display: none;
   }
