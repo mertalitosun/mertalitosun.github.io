@@ -316,4 +316,5 @@ swiper-container {
   position: sticky;
   top: 93vh;
   z-index: 1000;
+  cursor: pointer;
 }
