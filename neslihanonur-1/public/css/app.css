@@ -135,8 +135,8 @@ z-index: 1000;
 display: none;
 }
 .timer .timers h1{
-font-size: 20px;
-color: red;
+font-size: 25px;
+color: #84a16d;
 }
 /* FUN */
 .fun{

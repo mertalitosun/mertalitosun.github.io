@@ -11,7 +11,7 @@ function updateTime() {
   console.log(now);
 
   // const endDate = new Date(2024, 1, 24, 20, 0, 0).getTime();
-  const endDate = new Date(2024, 1, 10, 14, 0, 0).getTime();
+  const endDate = new Date(2024, 0, 19, 14, 40, 0).getTime();
   console.log(endDate);
 
   const remainingTime = endDate - now;
