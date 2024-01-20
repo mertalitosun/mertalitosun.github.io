@@ -15,17 +15,6 @@ overflow-x: hidden;
 a{
 text-decoration: none;
 }
-.loadingPage{
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
-width: 100%;
-top: 0;
-left: 0;
-background-color: #000;
-}
-
 
 .fontsI {
 font-family: 'Rajdhani', sans-serif;

@@ -20,8 +20,21 @@ a{
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: #282c35;
 }
+.loadingText{
+    font-size: 3em;
+    color: white; 
+    animation: changeColor .5s infinite alternate; 
+}
+@keyframes changeColor {
+    0% {
+      color: white;
+    }
+    100% {
+      color: #ff6347; 
+    }
+  }
 .index{
     display: none;
 }
