@@ -276,10 +276,13 @@ color: #fff;
   justify-content: center;
   height: 30px;
   width: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   position: sticky;
   top: 93vh;
   z-index: 1000;
   cursor: pointer;
+}
+#audioButtonContent{
+  margin-left: 20px;
+  font-size: 30px;
 }
