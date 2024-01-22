@@ -37,6 +37,7 @@ a{
   }
 .index{
     display: none;
+    height: 100vh;
 }
 .content{
     display: none;
@@ -112,13 +113,12 @@ a{
 }
 .openEvent .btn{
     background-color: #a0bdad;
+    color: #fff
 }
 .openEvent .btn:hover{
     background-color: #fff;
 }
-.openEvent .btn a{
-    color: #fff;
-}
+
 .openEvent .btn:hover a{
     color: #a0bdad;
 }
