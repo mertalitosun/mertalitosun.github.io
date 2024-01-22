@@ -80,7 +80,6 @@ font-size: 14px;
 
 
 /* TİMER */
-
 #day, #hour, #min, #sec{
 color: #84a16d;
 }
@@ -187,7 +186,6 @@ right: 0;
 font-size: 30px;
 transform: rotate(-20deg);
 }
-
 .memories-img .row{
 margin-top: 15px;
 }
@@ -243,32 +241,15 @@ content: "01/01/2024";
 content: "01/01/2024";
 }
 
-.footer{
-display: none;
-color: #000;
-font-size: 14px;
-/* display: flex;
-align-items: center;
-justify-content: center; */
-background-color: #84a16d;
-height: 30px;
-}
-.footer .container{
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.footer .container p{
-margin: 0;
-}
-.footer a{
-color: #fff;
-}
-  
+
+
+/* ANİMATE */
 .animate{
-    opacity: 0;
-    transition: .8s ease-in-out;
+  opacity: 0;
+  transition: .8s ease-in-out;
 }
+
+/* AUDİO */
 .audioButton{
   visibility: hidden;
   display: flex;
@@ -286,3 +267,25 @@ color: #fff;
   margin-left: 20px;
   font-size: 30px;
 }
+
+/* FOOTER  */
+.footer{
+  display: none;
+  color: #000;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #84a16d;
+  height: 30px;
+  }
+  .footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .footer .container p{
+  margin: 0;
+  }
+  .footer a{
+  color: #fff;
+  }

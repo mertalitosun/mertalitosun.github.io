@@ -6,7 +6,9 @@ const footer = document.getElementById("footer");
 openEvent.addEventListener("click", () => {
   index.style.display = "none";
   content.style.display = "block";
-  footer.style.display = "block";
+  footer.style.display = "flex";
+  footer.style.justifyContent = "center";
+  footer.style.alignItems = "center";
   audioButton.style.visibility = "visible";
 });
 setInterval(() => {
