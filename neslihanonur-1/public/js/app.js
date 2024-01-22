@@ -9,7 +9,6 @@ openEvent.addEventListener("click", () => {
   footer.style.display = "flex";
   footer.style.justifyContent = "center";
   footer.style.alignItems = "center";
-  audioButton.style.visibility = "visible";
 });
 setInterval(() => {
   if (touchIcon.style.display == "block") {
