@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a911a8f.css",
-    "main.js": "/static/js/main.ae154e88.js",
+    "main.css": "/static/css/main.ed55f76d.css",
+    "main.js": "/static/js/main.a2b0fd92.js",
     "static/js/453.d2eecd93.chunk.js": "/static/js/453.d2eecd93.chunk.js",
     "static/media/img1.png": "/static/media/img1.0dffd3820ed87fedf6e2.png",
+    "static/media/img2.png": "/static/media/img2.9b4410b59d602087f6f3.png",
+    "static/media/img5.png": "/static/media/img5.8715bc23e98f47ad094c.png",
+    "static/media/img4.png": "/static/media/img4.726449870c7f99ebc06e.png",
+    "static/media/img3.png": "/static/media/img3.35730e155ae7ef618162.png",
     "static/media/main.png": "/static/media/main.3cee5c091ffeeea897ed.png",
     "static/media/mertaliTosunCv.pdf": "/static/media/mertaliTosunCv.75009ad6d112f9576c11.pdf",
+    "static/media/resim-yok.jpg": "/static/media/resim-yok.a2340dd52d9a706c9808.jpg",
     "static/media/divdiv.png": "/static/media/divdiv.721ae20c9041118ae646.png",
     "static/media/yasinProfilePhoto.jpeg": "/static/media/yasinProfilePhoto.53a8969103b386bc10be.jpeg",
     "static/media/mertalitısunImage.jpeg": "/static/media/mertalitısunImage.aa5f0f98349da7bba91f.jpeg",
     "index.html": "/index.html",
-    "main.3a911a8f.css.map": "/static/css/main.3a911a8f.css.map",
-    "main.ae154e88.js.map": "/static/js/main.ae154e88.js.map",
+    "main.ed55f76d.css.map": "/static/css/main.ed55f76d.css.map",
+    "main.a2b0fd92.js.map": "/static/js/main.a2b0fd92.js.map",
     "453.d2eecd93.chunk.js.map": "/static/js/453.d2eecd93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a911a8f.css",
-    "static/js/main.ae154e88.js"
+    "static/css/main.ed55f76d.css",
+    "static/js/main.a2b0fd92.js"
   ]
 }
