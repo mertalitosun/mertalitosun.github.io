@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.980e7161.css",
-    "main.js": "/static/js/main.31dc86f5.js",
+    "main.css": "/static/css/main.3a911a8f.css",
+    "main.js": "/static/js/main.ae154e88.js",
     "static/js/453.d2eecd93.chunk.js": "/static/js/453.d2eecd93.chunk.js",
     "static/media/img1.png": "/static/media/img1.0dffd3820ed87fedf6e2.png",
     "static/media/main.png": "/static/media/main.3cee5c091ffeeea897ed.png",
     "static/media/mertaliTosunCv.pdf": "/static/media/mertaliTosunCv.75009ad6d112f9576c11.pdf",
     "static/media/divdiv.png": "/static/media/divdiv.721ae20c9041118ae646.png",
+    "static/media/yasinProfilePhoto.jpeg": "/static/media/yasinProfilePhoto.53a8969103b386bc10be.jpeg",
     "static/media/mertalitısunImage.jpeg": "/static/media/mertalitısunImage.aa5f0f98349da7bba91f.jpeg",
     "index.html": "/index.html",
-    "main.980e7161.css.map": "/static/css/main.980e7161.css.map",
-    "main.31dc86f5.js.map": "/static/js/main.31dc86f5.js.map",
+    "main.3a911a8f.css.map": "/static/css/main.3a911a8f.css.map",
+    "main.ae154e88.js.map": "/static/js/main.ae154e88.js.map",
     "453.d2eecd93.chunk.js.map": "/static/js/453.d2eecd93.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.980e7161.css",
-    "static/js/main.31dc86f5.js"
+    "static/css/main.3a911a8f.css",
+    "static/js/main.ae154e88.js"
   ]
 }
